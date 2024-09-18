@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+font-family:Outfit;
+scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body{
+  min-height:100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+.app{
+  width:80%;
+  margin:auto;
+  
+}
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+  25%{
+    opacity:0.25;
+  }
+  50%{
+    opacity:0.5;
+  }
+  100%{
+    opacity:1;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+  position: fixed;   /* Make the navbar fixed */
+  top: 0;            /* Stick it to the top of the page */
+  left: 0;
+  width: 100%;       /* Ensure it stretches across the width */
+  z-index: 1000;     /* Make sure it's on top of other elements */
+  background-color: #fff;  /* Set a background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-left:10%; 
+  padding-right:10%;/* Optional: Adds a subtle shadow for better visibility */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add padding to the content to prevent it from being hidden under the navbar */
+.app {
+  padding-top: 80px; /* Adjust based on your navbar height */
 }
