@@ -36,5 +36,5 @@ function FoodItem({id,name,price,description,image}) {
   )
 }
 
-
+//added functionality
 export default FoodItem
